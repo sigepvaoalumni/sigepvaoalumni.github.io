@@ -1,0 +1,40 @@
+<html>                  
+ <head>                  
+  <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+  <!--[if lt IE 8]>
+  <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
+  <link rel="stylesheet" href="/css/layout.css" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <title>{% if page.title %}{{ page.title }}{% else %}SigEp VAO{% endif %}</title>
+ </head>                 
+ <body id="{% if page.id %}{{ page.id }}{% else %}default{% endif %}" 
+       class="{% if page.class %}{{ page.class }}{% else %}default{% endif %}">                  
+  <div class="container">
+   <div class="prepend-2 span-20 append-2">
+    <div class="main">
+     <header>
+      <nav>
+       <a class="logo" href="/">&nbsp;</a>
+       <ul>
+        <li class="first"><a href="/board/">Board Members</a></li>
+        <li><a href="/roster/">Alumni Roster</a></li>
+        <li><a href="/events/">Events</a></li>
+       </ul>
+      </nav>
+     </header>
+     <section class="content">
+       {{ content }}
+     </section>
+     <footer>
+      <p class="top small">
+       All logos belong to their respected entities. The Virginia Omicron chapter does not represent Lynchburg College directly, and is only affiliated to the institution through the chapter of Sigma Phi Epsilon fraternity established at the College.
+      </p>
+      <p class="bottom small"><a href="/privacy/">Privacy and Terms</a></p>
+     </footer>
+    </div><!-- main -->
+   </div><!-- spacing div -->
+  </div><!-- container -->
+  </body>                 
+</html>
